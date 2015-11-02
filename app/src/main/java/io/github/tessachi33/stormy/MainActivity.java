@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String forecastUrl = "https://api.forecast.io/forecast/f5cc6334f7b3eb4e50bc2b418375041f/37.8267,-122.423";
+        String ApiKey = "f5cc6334f7b3eb4e50bc2b418375041f";
+
+        String forecastUrl = "https://api.forecast.io/forecast/37.8267,-122.423";
     }
 }
