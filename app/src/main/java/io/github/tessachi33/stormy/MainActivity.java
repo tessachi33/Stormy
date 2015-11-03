@@ -71,6 +71,9 @@ public class MainActivity extends AppCompatActivity {
 
         JSONObject currently = forecast.getJSONObject("currently");
 
+        CurrentWeather currentWeather = new CurrentWeather();
+        currentWeather.setHumidity(currently.getDouble("humidity"));
+
         return new CurrentWeather();
     }
 
