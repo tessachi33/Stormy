@@ -54,6 +54,11 @@ public class MainActivity extends AppCompatActivity {
                     Log.e(TAG, "exception caught  ", e);
                 }
 
+                catch (JSONException e) {
+                    Log.e(TAG, "exception caught  ", e);
+
+                }
+
             }
         });
 
@@ -61,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
 
     private CurrentWeather getCurrentDetails(String jsonData) throws JSONException{
         JSONObject forecast = new JSONObject(jsonData);
+        String timezone = forecast.getString("timezone");
+        Log.i(TAG, "from JSON:" + timezone);
     }
 
     private void alertUserAboutError() {
