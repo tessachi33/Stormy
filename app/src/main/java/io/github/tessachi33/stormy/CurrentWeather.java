@@ -8,6 +8,7 @@ public class CurrentWeather {
     private String mIcon;
     private long mTime;
     private double mTemperature;
-
+    private double mHumidity;
+    private double mPercipChance;
 
 }
