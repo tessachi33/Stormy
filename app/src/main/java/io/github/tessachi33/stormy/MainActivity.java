@@ -10,6 +10,7 @@ import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private CurrentWeather getCurrentDetails(String jsonData) {
+    private CurrentWeather getCurrentDetails(String jsonData) throws JSONException{
         JSONObject forecast = new JSONObject(jsonData);
     }
 
