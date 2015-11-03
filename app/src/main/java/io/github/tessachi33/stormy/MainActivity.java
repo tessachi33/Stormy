@@ -56,6 +56,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private CurrentWeather getCurrentDetails(String jsonData) {
+    }
+
     private void alertUserAboutError() {
 
         AlertDialogFragment dialog = new AlertDialogFragment();
