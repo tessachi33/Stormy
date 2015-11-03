@@ -40,4 +40,15 @@
         android:layout_centerHorizontal="true"
         android:textColor="#80ffffff"
         android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Charleston, SC"
+        android:id="@+id/locationLabel"
+        android:layout_above="@+id/timeLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"/>
 </RelativeLayout>
