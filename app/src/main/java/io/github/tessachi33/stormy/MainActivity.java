@@ -38,8 +38,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Response response) throws IOException {
                 try {
+                    Log.v(TAG, response.body().string());
                     if (response.isSuccessful()) {
-                        Log.v(TAG, response.body().string());
+                        mCurrentWeather = getCurrentDetails();
+
+                    }else {
+                        alertUserAboutError();
                     }
                 } catch (IOException e) {
                     Log.e(TAG, "exception caught  ", e);
@@ -48,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
 
+    private void alertUserAboutError() {
     }
 }
