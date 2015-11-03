@@ -1,3 +1,5 @@
+package io.github.tessachi33.stormy;
+
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;

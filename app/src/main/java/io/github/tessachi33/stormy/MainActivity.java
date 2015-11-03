@@ -1,5 +1,6 @@
 package io.github.tessachi33.stormy;
 
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -38,9 +39,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Response response) throws IOException {
                 try {
-                    Log.v(TAG, response.body().string());
+                    String jsonData = response.body().string();
+                    Log.v(TAG, jsonData);
                     if (response.isSuccessful()) {
-                        mCurrentWeather = getCurrentDetails();
+                        mCurrentWeather = getCurrentDetails(jsonData);
 
                     }else {
                         alertUserAboutError();
@@ -55,5 +57,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void alertUserAboutError() {
+
+        AlertDialogFragment dialog = new AlertDialogFragment();
+        dialog.show(getFragmentManager(), "error_dialog");
     }
 }
