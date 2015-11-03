@@ -6,6 +6,7 @@ package io.github.tessachi33.stormy;
 public class CurrentWeather {
 
     private String mIcon;
+    private long mTime;
 
 
 }
