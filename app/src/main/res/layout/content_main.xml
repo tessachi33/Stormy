@@ -30,4 +30,14 @@
         android:layout_toEndOf="@+id/tempuratureLabel"
         android:src="@drawable/degree"
         android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="at 5:00 p.m it will be"
+        android:id="@+id/timeLabel"
+        android:layout_above="@+id/tempuratureLabel"
+        android:layout_centerHorizontal="true"
+        android:textColor="#80ffffff"
+        android:textSize="18sp"/>
 </RelativeLayout>
