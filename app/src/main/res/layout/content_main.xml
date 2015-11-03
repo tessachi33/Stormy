@@ -12,7 +12,8 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main"
     tools:context=".MainActivity"
-    android:background="#296724">
+    android:background="#296724"
+    android:gravity="center_horizontal">
 
 
     <TextView
@@ -71,7 +72,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tempuratureLabel"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout">
 
         <LinearLayout
             android:orientation="vertical"
@@ -122,4 +124,16 @@
                 android:gravity="center_horizontal"/>
         </LinearLayout>
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the Holy City y&apos;all!"
+        android:id="@+id/summary"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp"/>
 </RelativeLayout>
