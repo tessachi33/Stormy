@@ -76,9 +76,11 @@ public class MainActivity extends AppCompatActivity {
         currentWeather.setTime(currently.getLong("time"));
         currentWeather.setIcon(currently.getString("icon"));
         currentWeather.setPercipChance(currently.getDouble("precipProbability"));
+        //currentWeather.setSummary(currently.getString("summary"));
+        currentWeather.setTemperature(currently.getDouble("temperature"));
 
 
-        return new CurrentWeather();
+        return currentWeather;
     }
 
     private void alertUserAboutError() {
