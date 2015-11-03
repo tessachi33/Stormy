@@ -27,5 +27,6 @@
         android:id="@+id/degreeImageView"
         android:layout_alignTop="@+id/tempuratureLabel"
         android:layout_toRightOf="@+id/tempuratureLabel"
-        android:layout_toEndOf="@+id/tempuratureLabel"/>
+        android:layout_toEndOf="@+id/tempuratureLabel"
+        android:src="@drawable/degree"/>
 </RelativeLayout>
