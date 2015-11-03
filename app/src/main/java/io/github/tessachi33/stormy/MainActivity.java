@@ -75,6 +75,8 @@ public class MainActivity extends AppCompatActivity {
         currentWeather.setHumidity(currently.getDouble("humidity"));
         currentWeather.setTime(currently.getLong("time"));
         currentWeather.setIcon(currently.getString("icon"));
+        currentWeather.setPercipChance(currently.getDouble("precipProbability"));
+
 
         return new CurrentWeather();
     }
