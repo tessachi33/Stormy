@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
         CurrentWeather currentWeather = new CurrentWeather();
         currentWeather.setHumidity(currently.getDouble("humidity"));
         currentWeather.setTime(currently.getLong("time"));
+        currentWeather.setIcon(currently.getString("icon"));
 
         return new CurrentWeather();
     }
